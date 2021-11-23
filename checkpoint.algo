@@ -1,0 +1,24 @@
+ALGORITHM algorithm_name
+VAR
+nb_mots:INTEGER:=1;
+nb_cr:INTEGER:=0;
+nb_vow:INTEGER:=0;
+c:CHAR:="";
+    
+BEGIN
+while (c <> ".") Do 
+read (c)
+nb_char := nb_char +1;
+if (c = "a" or c="a" or c="i" or c="o" or c="u" or c="y") then
+nb_vow :=nb_vow +1;
+End_if
+if (c=" ") then 
+nb_word :=nb_word +1;
+End_if
+
+end_while
+
+write("the length of the sentance is " ,nb_char)
+write("the number of words in the is",nb_mots)
+write("the number of vow is " ,nb_vow)
+END
